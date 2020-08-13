@@ -28,3 +28,13 @@ Follow [@SpringCentral](https://twitter.com/springcentral), [@SpringFramework](h
 ## License
 
 The Spring Framework is released under version 2.0 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0).
+
+## 环境搭建
+1. 在gradle/wrapper添加gradle-5.4.6-bin.zip文件
+2. 修改gradle-wrapper.properties中distributionUrl=gradle-5.6.4-bin.zip
+3. 提交github
+4. 执行./gradlew :spring-oxm:compileTestJava
+5. gradle cglibRepackJar
+6. gradle objenesisRepackJar
+7. 导入Eclipse
+8. Set-Java-Compiler-Errors/Warnings-Deprecated and restricted API设置Forbidden reference(access rules) Error->Warning
