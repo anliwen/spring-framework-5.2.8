@@ -6,5 +6,12 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="hw" class="com.anlw.HelloIoc"></bean>
+	
+	<bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+         <property name="location" value="test.properties"></property>
+     </bean> 
+	
+	<bean id="hw" class="com.anlw.HelloIoc">
+		<property name="myName" value="${an:${a}}" />
+	</bean>
 </beans>
