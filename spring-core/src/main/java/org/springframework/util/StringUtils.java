@@ -358,16 +358,28 @@ public abstract class StringUtils {
 	/**
 	 * Test whether the given string matches the given substring
 	 * at the given index.
+	 * 
+	 * String a = "acccc";
+	 * String b = "ccc";
+	 * System.out.println(substringMatch(a, 1, b)); -> true
+	 * System.out.println(substringMatch(a, 2, b)); -> true
+	 * 从a的index个字符开始,接下来的几个字符是否与b完全相同
+	 *  
 	 * @param str the original string (or StringBuilder)
 	 * @param index the index in the original string to start matching against
 	 * @param substring the substring to match at the given index
 	 */
+	// 在PropertyPlaceholderHelper$findPlaceholderEndIndex占位符解析使用过该方法
 	public static boolean substringMatch(CharSequence str, int index, CharSequence substring) {
+		// 对长度进行判断,比如注释的示例,此判断的目的就是如果a剩余字符串长度大于等于b,则可以比对
+		// 如果a剩余长度直接小于b，则一定不相同
 		if (index + substring.length() > str.length()) {
 			return false;
 		}
+		// 字符串逐个字符进行比对
 		for (int i = 0; i < substring.length(); i++) {
 			if (str.charAt(index + i) != substring.charAt(i)) {
+				// 任意个同等位置的字符不同,则不同
 				return false;
 			}
 		}
