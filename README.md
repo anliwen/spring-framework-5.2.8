@@ -35,5 +35,5 @@ Official Document: https://spring.io
 1.1 [(使用指南)SpringBoot占位符的使用](https://www.yuque.com/an.king/spring/shvl0o) 
 
 ## Spring SourceCode
-1.1 [(源码解析)Spring占位符](document/3 Spring占位符.md)  
+1.1 [(源码解析)Spring占位符](https://www.yuque.com/an.king/spring/lpc02f)  
 1.2 [(源码解析)SpringFramework配置文件路径](document/4 SpringFramework配置文件路径.md)  
