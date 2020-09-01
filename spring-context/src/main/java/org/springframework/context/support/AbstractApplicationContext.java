@@ -620,8 +620,6 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 */
 	protected void initPropertySources() {
 		// For subclasses: do nothing by default.
-		System.out.println(this.getClass().getName());
-		System.out.println(123);
 	}
 
 	/**
