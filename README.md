@@ -29,11 +29,11 @@ Official Document: https://spring.io
 
 
 ## Spring Framework Example
-1.1 [(使用指南)SpringFramework占位符的使用](./document/2 SpringFramework占位符的使用.md) 
+1.1 [(使用指南)SpringFramework占位符的使用](document/2 SpringFramework占位符的使用.md) 
  
 ## SpringBoot Example
-1.1 [(使用指南)SpringBoot占位符的使用](./document/1 SpringBoot占位符的使用.md) 
+1.1 [(使用指南)SpringBoot占位符的使用](document/1 SpringBoot占位符的使用.md) 
 
 ## Spring SourceCode
-1.1 [(源码解析)Spring占位符](./document/3 Spring占位符.md)  
-1.2 [(源码解析)SpringFramework配置文件路径](./document/4 SpringFramework配置文件路径.md)  
+1.1 [(源码解析)Spring占位符](document/3 Spring占位符.md)  
+1.2 [(源码解析)SpringFramework配置文件路径](document/4 SpringFramework配置文件路径.md)  
