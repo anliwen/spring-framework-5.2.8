@@ -1,19 +1,3 @@
-/*
- * Copyright 2002-2020 the original author or authors.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.springframework.context.support;
 
 import java.io.IOException;
@@ -70,7 +54,9 @@ import org.springframework.core.ResolvableType;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.core.env.ConfigurablePropertyResolver;
 import org.springframework.core.env.Environment;
+import org.springframework.core.env.PropertySourcesPropertyResolver;
 import org.springframework.core.env.StandardEnvironment;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
@@ -174,6 +160,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	private ApplicationContext parent;
 
 	/** Environment used by this context. */
+	// 为当前上下文创建一个工具
+	// 一个功能为解析${app}占位符,会创建一个StandardEnvironment实例
 	@Nullable
 	private ConfigurableEnvironment environment;
 
@@ -315,9 +303,11 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 */
 	@Override
 	public ConfigurableEnvironment getEnvironment() {
+		// 获取当前上下文的environment,如果为空则new StandardEnvironment()置于当前类属性上
 		if (this.environment == null) {
 			this.environment = createEnvironment();
 		}
+		// 如果不为空则直接返回当前Environment
 		return this.environment;
 	}
 
@@ -326,6 +316,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * <p>Subclasses may override this method in order to supply
 	 * a custom {@link ConfigurableEnvironment} implementation.
 	 */
+	// 为当前上下文创建一个Environment
+	// 该类的一级父类AbstractEnvironment存在饿汉式成员变量final ConfigurablePropertyResolver propertyResolver =
+	// new PropertySourcesPropertyResolver(this.propertySources)
+	// PropertySourcesPropertyResolver的一级父类AbstractPropertyResolver存在解析占位符的方法resolveRequiredPlaceholders()
 	protected ConfigurableEnvironment createEnvironment() {
 		return new StandardEnvironment();
 	}
@@ -626,6 +620,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 */
 	protected void initPropertySources() {
 		// For subclasses: do nothing by default.
+		System.out.println(this.getClass().getName());
+		System.out.println(123);
 	}
 
 	/**
