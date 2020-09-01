@@ -29,10 +29,10 @@ Official Document: https://spring.io
 
 
 ## Spring Framework Example
-1.1 [(使用指南)SpringFramework占位符的使用](document/2 SpringFramework占位符的使用.md) 
+1.1 [(使用指南)SpringFramework占位符的使用](https://www.yuque.com/an.king/spring/povgtg) 
  
 ## SpringBoot Example
-1.1 [(使用指南)SpringBoot占位符的使用](document/1 SpringBoot占位符的使用.md) 
+1.1 [(使用指南)SpringBoot占位符的使用](https://www.yuque.com/an.king/spring/shvl0o) 
 
 ## Spring SourceCode
 1.1 [(源码解析)Spring占位符](document/3 Spring占位符.md)  
