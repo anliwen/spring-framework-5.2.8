@@ -382,6 +382,13 @@ public abstract class AbstractEnvironment implements ConfigurableEnvironment {
 		return this.propertySources;
 	}
 
+	// 启动安全管理器的三种方式:
+	// 1.System.setSecurityManager(new SecurityManager()):通过硬编码的方式启动安全管理器：
+	// 2.-Djava.security.manager:启动程序的时候通过附加参数启动安全管理器
+	// 3.-Djava.security.manager -Djava.security.policy="E:/java.policy":启动程序的时候通过附加参数启动安全管理器,并制定配置文件
+	
+	// 如果启动安全管理器,没有获取系统属性的权限,则获取系统属性抛出异常:
+	// java.security.AccessControlException: access denied ("java.util.PropertyPermission" "*" "read,write")
 	@Override
 	@SuppressWarnings({"rawtypes", "unchecked"})
 	public Map<String, Object> getSystemProperties() {
