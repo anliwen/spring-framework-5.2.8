@@ -29,11 +29,11 @@ Official Document: https://spring.io
 
 
 ## Spring Framework Example
-1.1 [(使用指南)SpringFramework占位符的使用](https://www.yuque.com/docs/share/457f7447-fe0b-4da7-ba36-ae519533ed0a?# 《1.2 ✔SpringFramework占位符的使用》) 
+1.1 [(使用指南)SpringFramework占位符的使用](https://www.yuque.com/docs/share/457f7447-fe0b-4da7-ba36-ae519533ed0a?#) 
  
 ## SpringBoot Example
-1.1 [(使用指南)SpringBoot占位符的使用](https://www.yuque.com/docs/share/fbf5b897-7ca8-4f5a-a1b8-631b51449ce4?# 《1.1 ✔SpringBoot占位符的使用》) 
+1.1 [(使用指南)SpringBoot占位符的使用](https://www.yuque.com/docs/share/fbf5b897-7ca8-4f5a-a1b8-631b51449ce4?#) 
 
 ## Spring SourceCode
-1.1 [(源码解析)Spring占位符](https://www.yuque.com/docs/share/50a4c4ff-2334-46e5-9027-ae625aa2762d?# 《1.3 ✔(源)Spring占位符源码解析》)  
-1.2 [(源码解析)SpringFramework配置文件路径](https://www.yuque.com/docs/share/43129226-3ea5-4724-a0d7-573dd089e9d6?# 《1.4 ✔(源)SpringFramework配置文件路径源码解析》)  
+1.1 [(源码解析)Spring占位符](https://www.yuque.com/docs/share/50a4c4ff-2334-46e5-9027-ae625aa2762d?#)  
+1.2 [(源码解析)SpringFramework配置文件路径](https://www.yuque.com/docs/share/43129226-3ea5-4724-a0d7-573dd089e9d6?#)  
