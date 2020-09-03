@@ -8,10 +8,10 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-         <property name="location" value="test.properties"></property>
+         <property name="location" value="application.properties"></property>
      </bean> 
 	
 	<bean id="hw" class="com.anlw.HelloIoc">
-		<property name="myName" value="${an:${a}}" />
+		<property name="myName" value="${name}" />
 	</bean>
 </beans>
